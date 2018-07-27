@@ -6,12 +6,11 @@ import classes from './BurgerIngredient.css';
 
 class BurgerIngredient extends Component {
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     render() {
         let ingredient = null;
-
 
         switch (this.props.type) {
             case ('bread-bottom'):
