@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import Aux from '../../hoc/Auxs';
 import Burger from '../../components/Burger/Burger';
@@ -34,9 +34,9 @@ class BurgerBuilder extends Component {
         const sum = Object.keys(ingredients)
             .map(igKey => {
                 return ingredients[igKey]
-            }).reduce((sum,el) => {
+            }).reduce((sum, el) => {
                 return sum + el;
-            },0);
+            }, 0);
 
         this.setState({purchasable: sum > 0})
     }
@@ -59,7 +59,7 @@ class BurgerBuilder extends Component {
     removeIngredientHandler = (type) => {
         const oldCount = this.state.ingredients[type];
         let updateCount = oldCount;
-        if (oldCount <= 0 ) {
+        if (oldCount <= 0) {
             return;
         }
         updateCount = oldCount - 1;
@@ -86,7 +86,7 @@ class BurgerBuilder extends Component {
         const disabledInfo = {
             ...this.state.ingredients
         };
-        for(let key in disabledInfo) {
+        for (let key in disabledInfo) {
             disabledInfo[key] = disabledInfo[key] <= 0;
         }
 
