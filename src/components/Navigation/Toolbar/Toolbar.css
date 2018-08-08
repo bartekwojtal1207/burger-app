@@ -21,11 +21,7 @@
 .Logo {
     height: 80%;
 }
-@media (min-width: 500px) {
-    .DesktopOnly {
-        color: red !important;
-    }
-}
+
 @media (max-width: 499px) {
     .DesktopOnly {
         display: none;
