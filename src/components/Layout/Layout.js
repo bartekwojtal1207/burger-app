@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Aux from '../../hoc/Auxs';
 import classes from './Layout.css';
