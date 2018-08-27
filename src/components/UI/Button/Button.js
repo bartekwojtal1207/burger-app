@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Auxs';
+import Aux from '../../../hoc/Auxs/Auxs';
 import classes from './Button.css';
 import PropTypes from "prop-types";
 ;
